@@ -25,6 +25,210 @@
 <template>There have been 15 presidents in the Philippines.</template>
 </category>
 
+<category>
+<pattern>WHO IS THE 1ST PRESIDENT</pattern>
+<template>The first president is Emilio Aguinaldo.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE FIRST PRESIDENT</pattern>
+<template><srai>WHO IS THE 1ST PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 2ND PRESIDENT</pattern>
+<template>The second president is Manuel L. Quezon.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE SECOND PRESIDENT</pattern>
+<template><srai>WHO IS THE 2ND PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 3RD PRESIDENT</pattern>
+<template>The third president is Jose P. Laurel.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE THIRD PRESIDENT</pattern>
+<template><srai>WHO IS THE 3RD PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 4TH PRESIDENT</pattern>
+<template>The fourth president is Sergio Osmeña.</template>
+</category>
+
+<category>
+<pattern>WHO IS THE FORTH PRESIDENT</pattern>
+<template><srai>WHO IS THE 4TH PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 5TH PRESIDENT</pattern>
+<template>The fifth president is Manuel L. Roxas.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE FIFTH PRESIDENT</pattern>
+<template><srai>WHO IS THE 5TH PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 6TH PRESIDENT</pattern>
+<template>The sixth president is Elpidio Quirino.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE SIXTH PRESIDENT</pattern>
+<template><srai>WHO IS THE 6TH PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 7TH PRESIDENT</pattern>
+<template>The first president is Ramon Magsaysay.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE SEVENTH PRESIDENT</pattern>
+<template><srai>WHO IS THE 7TH PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 8TH PRESIDENT</pattern>
+<template>The first president is Carlos P. Garcia.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE EIGTH PRESIDENT</pattern>
+<template><srai>WHO IS THE 8TH PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 9TH PRESIDENT</pattern>
+<template>The first president is Ferdinand Marcos.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 9TH PRESIDENT</pattern>
+<template><srai>WHO IS THE NINTH PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 10TH PRESIDENT</pattern>
+<template>The first president is Ferdinand Marcos.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 10TH PRESIDENT</pattern>
+<template><srai>WHO IS THE 10TH PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 11TH PRESIDENT</pattern>
+<template>The first president is Corazon Aquino.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE ELEVENTH PRESIDENT</pattern>
+<template><srai>WHO IS THE 11TH PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 12TH PRESIDENT</pattern>
+<template>The first president is Fidel V. Ramos.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE TWELFTH PRESIDENT</pattern>
+<template><srai>WHO IS THE 12TH PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 13TH PRESIDENT</pattern>
+<template>The first president is Joseph Estrada.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE THIRTEENTH PRESIDENT</pattern>
+<template><srai>WHO IS THE 13TH PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 14TH PRESIDENT</pattern>
+<template>The first president is Gloria Macapagal Arroyo.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE FOURTEENTH PRESIDENT</pattern>
+<template><srai>WHO IS THE 14TH PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>WHO IS THE 15TH PRESIDENT</pattern>
+<template>The first president is Benigno Aquino III.</template>    
+</category>
+
+<category>
+<pattern>WHO IS THE FIFTEENTH PRESIDENT</pattern>
+<template><srai>WHO IS THE 15TH PRESIDENT</srai></template>    
+</category>
+
+<category>
+<pattern>DO YOU KNOW WHO THE * PRESIDENT IS</pattern>
+<template><srai>WHO IS THE <star/> PRESIDENT</srai></template>
+</category>
+
+<category>
+<pattern>WHICH PRESIDENT IS THE *</pattern>
+<template><srai>WHO IS THE <star/> PRESIDENT</srai></template>
+</category>
+
+<category>
+<pattern>WHO WAS THE PRESIDENT IN THE YEAR *</pattern>
+<set name="year"><star/></set>
+<script language = "JavaScript">
+var x = <get name="year"/>;
+var answer = "NaN";
+x = parseInt(x);
+
+if(x >= 1899)
+    answer = "Emilio Aguinaldo";
+if(x >= 1935)
+    answer = "Manuel L. Quezon";
+if(x >= 1944)
+    answer = "Sergio Osmeña";
+if(x >= 1946)
+    answer = "Manuel Roxas";
+if(x >= 1948)
+    answer = "Elpidio Quirino";
+if(x >= 1953)
+    answer = "Ramon Magsaysay";
+if(x >= 1957)
+    answer = "Carlos P. Garcia";
+if(x >= 1961)
+    answer = "Diosdado Macapagal";
+if(x >= 1965)
+    answer = "Ferdinand Marcos";
+if(x >= 1986)
+    answer = "Corazon Aquino";
+if(x >= 1992)
+    answer = "Fidel V. Ramos";
+if(x >= 1998)
+    answer = "Joseph Estrada";
+if(x >= 2001)
+    answer = "Gloria Macapagal Arroyo";
+if(x >= 2010)
+    answer = "Benigno Aquino III";
+    
+document.write(answer);    
+    
+'<set name="answer">'answer'</set>'
+</script>
+<template><get name="answer"/> is the president in <star/>.</template>
+</category>
+
 <category><pattern>BRAIN VERSION</pattern>
 <template><program/></template>
 </category>
